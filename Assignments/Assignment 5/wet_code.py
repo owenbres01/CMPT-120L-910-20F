@@ -8,7 +8,7 @@
 def saturdays_bank_transactions(transations) -> (float, float):
     savings = 1096.25
     checking = 1590.80
-
+    
     checking += (transations[0] * 0.85)
     savings += (transations[0] * 0.15)
     
@@ -40,3 +40,26 @@ if __name__ == "__main__":
     transations = [300.00, -50.00, -5.00, -20, 15.72, 2083.93, -1034.00, -420.00, -5.23, -15.93, -72.90]
     new_balance = saturdays_bank_transactions(transations)
     print("Your new checking balance is:", '${:.2f}'.format(round(new_balance[0], 2)), "\n", "Your new savings balance is:", '${:.2f}'.format(round(new_balance[1], 2)))
+
+#DRY CODE
+savings = 1096.25
+checking = 1590.80
+deposit_checking = .85
+deposit_savings = .15
+
+positive_transations = [300, 15.72, 2083.93]
+negative_transations = [-50.00, -5.00, -20, -1034.00, -420.00, -5.23, -15.93, -72.90]
+
+checking += (positive_transations[0] * deposit_checking)
+savings += (positive_transations[0] * deposit_savings)
+
+checking += (positive_transations[1] * deposit_checking)
+savings += (positive_transations[1] * deposit_savings)
+
+checking += (positive_transations[2] * deposit_checking)
+savings += (positive_transations[2] * deposit_savings)
+
+savings_balance = (savings)
+checking_balance = (checking + sum(negative_transations))
+print ("You're new checking balance is:", checking_balance)
+print("You're new savings balance is:", savings_balance)
