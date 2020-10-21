@@ -1,4 +1,2 @@
-def inputnum():
-    number = input("Input integer:")
-    return(number)
-main()
+a = [1, 3, 6, 8, 9]
+sum(a)
