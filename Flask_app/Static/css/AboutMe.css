@@ -1,31 +1,46 @@
-head{
-    background-color: purple;
-    opacity: 0.3;
-}
-
-body{
-    background-color: purple;
-    opacity: 0.3;
-}
-
 h1{
-    color: blue;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 h2{
-    color: blue;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 li{
-    color: blue;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 
 .MV{
     width: 225px;
     height: 130px;
-    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Pat{
+    width: 250px;
+    height: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Marist{
+    width: 225px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: rgba(160, 0, 160, 0.3);
 }

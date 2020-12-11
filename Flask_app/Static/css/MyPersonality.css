@@ -1,38 +1,26 @@
 h1{
-    color: blue;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
     }
 
 h2{
-    color: blue;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p{
-    color: blue;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
 }
 
 li{
-    color: blue;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
 }
 
-head{
-    background-color: yellow;
-    opacity: 0.3;
-}
-
 body{
-    background-color: yellow;
-    opacity: 0.3;
-}
-
-.PersonalityImage{
-    width: 120px;
-    height: 200px;
-    position: absolute;
+    background-color: rgba(255, 255, 6, 0.3);
 }
