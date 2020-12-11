@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/AboutMe.css')}}">
-    <title>Base for templates</title>
-    {% block head %}{% endblock %}
+    <title>About Me</title>
+    {% block head %}
+    <h1>Here are some quick facts about me!</h1>
+    {% endblock %}
 </head>
 <body>
     {% block body %}
+    <h2>Facts about me</h2>
     <ol>
-        <p>About Me</p>
-        <li>I am 19</li>
-        <li>I like baseball</li>
+        <li>I live on an island of the coast of Massachusetts called Martha's Vineyard</li>
+        <li>Baseball is my favorite sport to play and I play on the club team at Marist College</li>
+        <li>My favorite football team is the Patriots</li>
+        <li>I have never broke a bone</li>
+        <li>My favorite candy is caramel hershey kisses</li>
+        <li>My current major is Economics</li>
     </ol>
+    <h2>My Future Plans</h2>
+    <ul>
+        <li>I would like to get a job right out of college working as either some type of analyst or consultant.</li>
+        <li>I hope to find a job in Boston or possibly out west in California or Oregon.</li>
+        <li>I would like to work for a company with a green initiative so that I can help create a cleaner and brighter future.</li>
+    </ul>
+    <img src="{{url_for('static', filename='MV.png')}}" class = "MV" alt="A map image of Martha's Vineyard of the coast of MA">
+    <img src="{{url_for('static', filename='Patriots.png')}}" class = "MV" alt="A picture of the Patriots logo">
+    <img src="{{url_for('static', filename='Marist.png')}}" class = "MV" alt="A picture of the Marist logo">
+    <p><a href = "http://127.0.0.1:5000/">Home Page</a></p>
+    <p><a href = "http://127.0.0.1:5000/Contact">Contact</a></p>
+    <p><a href = "http://127.0.0.1:5000/MyPersonality">My Personality</a></p>
     {% endblock %}
 </body>
 </html>

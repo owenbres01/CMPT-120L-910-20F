@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/MyPersonality.css')}}">
-    <title>Base for templates</title>
+    <title>My Personality</title>
     {% block head %}
     <h1>My Personality</h1>
     {% endblock %}
@@ -13,15 +13,20 @@
 <body>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/MyPersonality.css')}}">
     {% block body %}
-    <img src="{{url_for('static', filename='PersonalityImage.png')}}" alt="Some textual description of PersonalityImage.png"/>
+    <img src="{{url_for('static', filename='PersonalityImage.png')}}" class= "PersonalityImage" alt="A picture of my personality percentages">
     <ol>
-        <p>Here is a brief description of what each trait means</p>
-        <li>Extraverted: This means I tend to be a little bit more outgoing and socially confident.</li>
-        <li>Intuitive: This means that I have a good ability of picking up on subtle cues and hidden aspects of interactions or situations.</li>
-        <li>Feelings: This means that I tend to mostly listen to my emotions when I make important choices.</li>
-        <li>Judging: This means that I am focused on and dedicated to my goals and rarely get sidetracked.</li>
-        <li>Turbulent: This means that I am success-driven, perfectionistic, and eager to improve.</li>
+        <h2>Here is a brief description of what each trait means</h2>
+        <li><strong>Extraverted:</strong> This means I tend to be a little bit more outgoing and socially confident.</li>
+        <li><strong>Intuitive:</strong> This means that I have a good ability of picking up on subtle cues and hidden aspects of interactions or situations.</li>
+        <li><strong>Feelings:</strong> This means that I tend to mostly listen to my emotions when I make important choices.</li>
+        <li><strong>Judging:</strong> This means that I am focused on and dedicated to my goals and rarely get sidetracked.</li>
+        <li><strong>Turbulent:</strong> This means that I am success-driven, perfectionistic, and eager to improve.</li>
     </ol>
+    <p>I took this personality test on a website called 16 Personalities. It was pretty quick to take and it had a whole bunch of information that it gave about my personality type. </p>
+    <p><a href = "https://www.16personalities.com/">Click here</a> if you want to take a test of your own.</p>
+    <p><a href = "http://127.0.0.1:5000/">Home Page</a></p>
+    <p><a href = "http://127.0.0.1:5000/AboutMe">About Me</a></p>
+    <p><a href = "http://127.0.0.1:5000/Contact">Contact</a></p>
     {% endblock %}
 </body>
 </html>

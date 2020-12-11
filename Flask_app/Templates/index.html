@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
-    <title>Base for templates</title>
+    <title>Owen Bresnick's Website</title>
     {% block head %}
 <h1>Hi! Welcome to my little flask website. This website is going to be all about me, so if that doesn't interest you then this website will not be for you.</h1>
-<h1>To naviagte the page just type in the url "/then whatever page you want to see".</h1>
-<h1>For example if you want to go to the About Me page type "/AboutMe" in the url.</h1>
-<h1>I hope you enjoy!</h1>
+<h2>To navigate simply click the text found in the bottom left of every page.<br>I hope you enjoy!</h2>
     {% endblock %}
 </head>
 <body>
     {% block body %}
-    <p>About Me</p>
-    <p>Contact</p>
-    <p>My Personality</p>
+    <p><a href = "http://127.0.0.1:5000/AboutMe">About Me</a></p>
+    <p><a href = "http://127.0.0.1:5000/Contact">Contact</a></p>
+    <p><a href = "http://127.0.0.1:5000/MyPersonality">My Personality</a></p>
     {% endblock %}
 </body>
 </html>
