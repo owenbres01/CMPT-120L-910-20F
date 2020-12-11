@@ -1,0 +1,8 @@
+In order to start the flask website open up windows powershell
+1. type cd Desktop
+2. type cd CMPT-120L-910-20F
+3. type cd Flask_app
+4. type py -m venv env
+5. type env\Scripts\activate
+6. type flask run
+7. then copy and paste the url into a web browser.
